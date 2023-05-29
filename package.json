@@ -3,7 +3,7 @@
   "homepage":"https://arspit.github.io/Expense-data-",
       
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -16,13 +16,17 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions"},
+    "resolutions":{
+      "graceful-fs":"^4.2.11"
+    },
     "predeploy": "npm run build",
       "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  ,
   "eslintConfig": {
     "extends": [
       "react-app",
